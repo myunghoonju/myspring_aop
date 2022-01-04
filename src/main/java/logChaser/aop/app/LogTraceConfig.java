@@ -1,7 +1,7 @@
 package logChaser.aop.app;
 
-import logChaser.aop.app.trace.logtrace.FieldLogTrace;
 import logChaser.aop.app.trace.logtrace.LogTrace;
+import logChaser.aop.app.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,6 +10,6 @@ public class LogTraceConfig {
 
     @Bean
     public LogTrace logTrace() {
-        return new FieldLogTrace();
+        return new ThreadLocalLogTrace();
     }
 }
