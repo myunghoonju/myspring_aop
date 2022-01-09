@@ -19,11 +19,11 @@ public class AppV1Config {
 
     @Bean
     public POrderServiceV1 porderServiceV1() {
-        return new POrderServiceImpl(porderRepository());
+        return new POrderServiceImpl(porderRepositoryV1());
     }
 
     @Bean
-    public POrderRepositoryV1 porderRepository() {
+    public POrderRepositoryV1 porderRepositoryV1() {
         return new POrderRepositoryImpl();
     }
 }
