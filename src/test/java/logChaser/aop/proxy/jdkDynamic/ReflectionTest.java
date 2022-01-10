@@ -21,7 +21,7 @@ public class ReflectionTest {
     }
 
     @Test
-    void reflection1() throws Exception {
+    void reflection1() throws ReflectiveOperationException {
         Class classHello = Class.forName("logChaser.aop.proxy.jdkDynamic.ReflectionTest$Hello");
 
         Hello target = new Hello();
@@ -36,7 +36,7 @@ public class ReflectionTest {
     }
 
     @Test
-    void reflection2() throws Exception {
+    void reflection2() throws ReflectiveOperationException {
         Class classHello = Class.forName("logChaser.aop.proxy.jdkDynamic.ReflectionTest$Hello");
         Hello target = new Hello();
         Method callA = classHello.getMethod("callA");
@@ -46,7 +46,7 @@ public class ReflectionTest {
         dynamicCall(callB, target);
     }
 
-    private void dynamicCall(Method method, Object target) throws Exception {
+    private void dynamicCall(Method method, Object target) throws ReflectiveOperationException {
         log.info("dynamicCall start");
         Object result = method.invoke(target);
         log.info("result = {}", result);
