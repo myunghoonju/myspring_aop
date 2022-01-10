@@ -4,6 +4,8 @@ import logChaser.aop.app.proxy.config.AppV1Config;
 import logChaser.aop.app.proxy.config.AppV2Config;
 import logChaser.aop.app.proxy.config.v1_proxy.ConcreteProxyConfig;
 import logChaser.aop.app.proxy.config.v1_proxy.InterfaceProxyConfig;
+import logChaser.aop.app.proxy.config.v2_dynamic_proxy.DynamicProxyBasicConfig;
+import logChaser.aop.app.proxy.config.v2_dynamic_proxy.DynamicProxyFilterConfig;
 import logChaser.aop.app.trace.logtrace.LogTrace;
 import logChaser.aop.app.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -13,7 +15,9 @@ import org.springframework.context.annotation.Import;
 
 //@Import({AppV1Config.class, AppV2Config.class})
 //@Import(InterfaceProxyConfig.class)
-@Import(ConcreteProxyConfig.class)
+//@Import(ConcreteProxyConfig.class)
+//@Import(DynamicProxyBasicConfig.class)
+@Import(DynamicProxyFilterConfig.class)
 @SpringBootApplication(scanBasePackages = "logChaser.aop.app.proxy.app")
 public class AopApplication {
 
