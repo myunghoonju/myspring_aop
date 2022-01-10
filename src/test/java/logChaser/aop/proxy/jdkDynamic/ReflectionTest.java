@@ -22,7 +22,7 @@ public class ReflectionTest {
 
     @Test
     void reflection1() throws ReflectiveOperationException {
-        Class classHello = Class.forName("logChaser.aop.proxy.jdkDynamic.ReflectionTest$Hello");
+        Class<?> classHello = Class.forName("logChaser.aop.proxy.jdkDynamic.ReflectionTest$Hello");
 
         Hello target = new Hello();
 
@@ -37,7 +37,7 @@ public class ReflectionTest {
 
     @Test
     void reflection2() throws ReflectiveOperationException {
-        Class classHello = Class.forName("logChaser.aop.proxy.jdkDynamic.ReflectionTest$Hello");
+        Class<?> classHello = Class.forName("logChaser.aop.proxy.jdkDynamic.ReflectionTest$Hello");
         Hello target = new Hello();
         Method callA = classHello.getMethod("callA");
         Method callB = classHello.getMethod("callB");
