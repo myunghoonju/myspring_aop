@@ -1,6 +1,5 @@
 package logChaser.aop.app.proxy.config;
 
-
 import logChaser.aop.app.proxy.app.v2.POrderControllerV2;
 import logChaser.aop.app.proxy.app.v2.POrderRepositoryV2;
 import logChaser.aop.app.proxy.app.v2.POrderServiceV2;

@@ -1,11 +1,5 @@
 package logChaser.aop.app.proxy.config.v3_proxyFactory;
 
-import logChaser.aop.app.proxy.app.v1.POrderControllerV1;
-import logChaser.aop.app.proxy.app.v1.POrderControllerV1Impl;
-import logChaser.aop.app.proxy.app.v1.POrderRepositoryImpl;
-import logChaser.aop.app.proxy.app.v1.POrderRepositoryV1;
-import logChaser.aop.app.proxy.app.v1.POrderServiceImpl;
-import logChaser.aop.app.proxy.app.v1.POrderServiceV1;
 import logChaser.aop.app.proxy.app.v2.POrderControllerV2;
 import logChaser.aop.app.proxy.app.v2.POrderRepositoryV2;
 import logChaser.aop.app.proxy.app.v2.POrderServiceV2;

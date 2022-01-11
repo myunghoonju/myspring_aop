@@ -3,7 +3,6 @@ package logChaser.aop.app.trace.chaseAfter;
 import logChaser.aop.app.trace.TraceStatus;
 import org.junit.jupiter.api.Test;
 
-
 class ChaseAfterV2Test {
 
     @Test

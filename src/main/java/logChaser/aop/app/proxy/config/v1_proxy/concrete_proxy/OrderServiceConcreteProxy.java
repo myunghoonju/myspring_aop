@@ -4,14 +4,12 @@ import logChaser.aop.app.proxy.app.v2.POrderServiceV2;
 import logChaser.aop.app.trace.TraceStatus;
 import logChaser.aop.app.trace.logtrace.LogTrace;
 
-
 public class OrderServiceConcreteProxy extends POrderServiceV2 {
 
     private final POrderServiceV2 target;
     private final LogTrace logTrace;
 
-    public OrderServiceConcreteProxy(POrderServiceV2 target,
-                                     LogTrace logTrace) {
+    public OrderServiceConcreteProxy(POrderServiceV2 target, LogTrace logTrace) {
         super(null);
         this.target = target;
         this.logTrace = logTrace;

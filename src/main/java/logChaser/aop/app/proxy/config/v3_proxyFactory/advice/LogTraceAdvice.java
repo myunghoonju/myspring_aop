@@ -4,7 +4,6 @@ import logChaser.aop.app.trace.TraceStatus;
 import logChaser.aop.app.trace.logtrace.LogTrace;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
-import org.springframework.util.PatternMatchUtils;
 
 import java.lang.reflect.Method;
 

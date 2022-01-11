@@ -1,6 +1,5 @@
 package logChaser.aop.app.proxy.app.v2;
 
-
 public class POrderServiceV2 {
 
     private final POrderRepositoryV2 orderRepositoryV2;
